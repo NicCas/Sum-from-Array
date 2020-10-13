@@ -19,7 +19,7 @@ public class Main {
         long startTime;
         long elapsedTime;
 
-        for (int j = 0; j < 1; j++)
+        for (int j = 0; j < 4; j++)
         {
             // Create Array
             myArray = new int[sizes[j]];
