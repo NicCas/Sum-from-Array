@@ -19,7 +19,7 @@ public class Main {
         long startTime;
         long elapsedTime;
 
-        for (int j = 0; j < 4; j++)
+        for (int j = 0; j < 1; j++)
         {
             // Create Array
             myArray = new int[sizes[j]];
@@ -50,7 +50,7 @@ public class Main {
 
             System.out.print("Starting unsorted divide and conquer attempt.....     ");
             startTime = System.currentTimeMillis();
-            sumArray = DAC.searchSum(sum, false);
+            sumArray = DAC.searchSum(sum);
             elapsedTime = System.currentTimeMillis() - startTime;
 
             if (sumArray == null)
@@ -79,7 +79,7 @@ public class Main {
 
             System.out.print("Starting sorted divide and conquer attempt.....       ");
             startTime = System.currentTimeMillis();
-            sumArray = DAC.searchSum(sum, true);
+            sumArray = DAC.searchSum(sum);
             elapsedTime = System.currentTimeMillis() - startTime;
 
             if (sumArray == null)
