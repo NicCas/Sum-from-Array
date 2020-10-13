@@ -1,12 +1,13 @@
 public class BinarySearch {
     private int[] possibleAddends;
     private int[] addends = new int[2];
+
     public BinarySearch(int[] userArray)
     {
         possibleAddends = userArray;
     }
 
-    public int[] search (int sum, boolean sorted){
+    public int[] searchSum (int sum, boolean sorted){
         boolean searchSuccessful;
 
         // If unsorted then sort it
@@ -14,9 +15,8 @@ public class BinarySearch {
             quickSort(0, possibleAddends.length-1);
         }
 
-
-        if(sum < 0)
-        { // If the sum is negative start off by looking for [sum, 0] as the addends, if unsuccessful try [sum+i, -i]
+        if(sum < 0) // If the sum is negative start off by looking for [sum, 0] as the addends, if unsuccessful try [sum+i, -i]
+        {
             // Do not check duplicates (ie [2,4], [4,2])
             int cutOff = (int) Math.ceil(sum/2);
 
