@@ -50,7 +50,7 @@ public class Main {
 
             System.out.print("Starting unsorted divide and conquer attempt.....     ");
             startTime = System.currentTimeMillis();
-            sumArray = DAC.search(sum, false);
+            sumArray = DAC.searchSum(sum, false);
             elapsedTime = System.currentTimeMillis() - startTime;
 
             if (sumArray == null)
@@ -79,7 +79,7 @@ public class Main {
 
             System.out.print("Starting sorted divide and conquer attempt.....       ");
             startTime = System.currentTimeMillis();
-            sumArray = DAC.search(sum, true);
+            sumArray = DAC.searchSum(sum, true);
             elapsedTime = System.currentTimeMillis() - startTime;
 
             if (sumArray == null)
